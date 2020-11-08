@@ -14,7 +14,6 @@ public class InvalidPosition extends Exception {
 	/**
 	 * InvalidPosition is the constructor of the class
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
