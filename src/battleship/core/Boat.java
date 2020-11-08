@@ -13,7 +13,6 @@ public class Boat {
 	/**
 	 * type is the boat type, its an enumeration of all the boat types according to its size
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 *
@@ -23,7 +22,6 @@ public class Boat {
 	/**
 	 * orientation is the direction where subsequent points will be placed on the board
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 *
@@ -33,7 +31,6 @@ public class Boat {
 	/**
 	 * initialPoint is the first point where the boat will be placed(according to its size and direction)
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -43,7 +40,6 @@ public class Boat {
 	/**
 	 * Main constructor to Boat class
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
@@ -61,7 +57,6 @@ public class Boat {
 	/**
 	 * Alternative constructor method to boat, it's meant to be used only when the boat is of type small
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
@@ -78,7 +73,6 @@ public class Boat {
 	/**
 	 * Returns the type of the boat
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
@@ -92,7 +86,6 @@ public class Boat {
 	/**
 	 * Returns the orientation of the boat
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
@@ -106,7 +99,6 @@ public class Boat {
 	/**
 	 * Returns the first point of the boat
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
