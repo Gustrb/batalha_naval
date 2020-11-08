@@ -13,7 +13,6 @@ public class Board {
 	/**
 	 * COLS is a constant which holds the number of columns in the board
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 *
@@ -23,7 +22,6 @@ public class Board {
 	/**
 	 * ROWS is a constant which holds the number of rows in the board
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -33,7 +31,6 @@ public class Board {
 	/**
 	 * board is the matrix of Points where the game will be played
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -43,7 +40,6 @@ public class Board {
 	/**
 	 * Board is the constructor for the Board class, where the matrix gets started
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
@@ -61,7 +57,6 @@ public class Board {
 	/**
 	 * isValidPosition verify if the given point is in the border of the board matrix
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
@@ -77,7 +72,6 @@ public class Board {
 	/**
 	 * placeBoat places a boat in the board if the given boat is valid
 	 *
-	 * @author Gustavo Reis Bauer, Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -168,7 +162,6 @@ public class Board {
 	/**
 	 * shoot shoots a point of a player board
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 * 
@@ -194,7 +187,6 @@ public class Board {
 	/**
 	 * printBoard renders the board on screen with the boats has hit
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
