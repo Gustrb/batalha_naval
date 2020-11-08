@@ -25,7 +25,6 @@ public enum BoatType {
 	/**
 	 * size is the number of positions the boat will occupy
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -35,7 +34,6 @@ public enum BoatType {
 	/**
 	 * BoatType is the constructor for the enum
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access default
 	 * 
@@ -49,14 +47,11 @@ public enum BoatType {
 	/**
 	 * getSize returns the boat size
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
 	 * @returns the value of the size property
 	 * 
 	 * */
-	public int getSize() {
-		return this.size;
-	}
+	public int getSize() { return this.size; }
 }
