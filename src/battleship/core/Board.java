@@ -91,9 +91,9 @@ public class Board {
 	 *
 	 * */
 	public boolean placeBoat(final Boat boat) throws InvalidPosition, AlreadyHaveBoat, ArrayIndexOutOfBoundsException {
-		final int boatSize 				    = boat.getType().getSize();
-		final BoatOrientation orientation   = boat.getOrientation();
-		final Point initialPoint			= boat.getInitialPoint();
+		final int boatSize = boat.getType().getSize();
+		final BoatOrientation orientation = boat.getOrientation();
+		final Point initialPoint = boat.getInitialPoint();
 		
 		if(!isValidPosition(initialPoint)) throw new InvalidPosition(initialPoint);
 
@@ -105,40 +105,47 @@ public class Board {
 				}
 
 				for(int i = initialPoint.getX(); i < boatSize + initialPoint.getX(); i++) {
-					if(!isValidPosition(this.board[initialPoint.getY()][i]) || boatSize + initialPoint.getX() > ROWS)
+					if(!isValidPosition(this.board[initialPoint.getY()][i]) || boatSize + initialPoint.getX() > ROWS) {
 						throw new InvalidPosition(this.board[initialPoint.getY()][i]);
+					}
 
 					this.board[initialPoint.getY()][i].occupy();
 					this.board[initialPoint.getY()][i].setOrientation(BoatOrientation.HORIZONTAL);
 
-					if(i == boatSize + initialPoint.getX() - 1 || i == initialPoint.getX())
+					if(i == boatSize + initialPoint.getX() - 1 || i == initialPoint.getX()) {
 						this.board[initialPoint.getY()][i].setEdge();
-
-					if(i == initialPoint.getX())
+					}
+					
+					if(i == initialPoint.getX()) {
 						this.board[initialPoint.getY()][i].setFirst();
+					}
 				}
 
 				return true;
 
 			case VERTICAL:
 				for(int i = initialPoint.getY(); i < boatSize + initialPoint.getY(); i++) {
-					if(this.board[i][initialPoint.getX()].isOccupied())
+					if(this.board[i][initialPoint.getX()].isOccupied()) {
 						throw new AlreadyHaveBoat(this.board[initialPoint.getY()][i]);
+					}
 
 				}
 
 				for(int i = initialPoint.getY(); i < boatSize+initialPoint.getY(); i++) {
-					if(!isValidPosition(this.board[i][initialPoint.getX()]) || boatSize + initialPoint.getY() > COLS)
+					if(!isValidPosition(this.board[i][initialPoint.getX()]) || boatSize + initialPoint.getY() > COLS) {
 						throw new InvalidPosition(this.board[i][initialPoint.getX()]);
+					}
 
 					this.board[i][initialPoint.getX()].occupy();
 					this.board[i][initialPoint.getX()].setOrientation(BoatOrientation.VERTICAL);
 
-					if(i == boatSize+initialPoint.getY() - 1 || i == initialPoint.getY())
+					if(i == boatSize+initialPoint.getY() - 1 || i == initialPoint.getY()) {
 						this.board[i][initialPoint.getX()].setEdge();
+					}
 
-					if(i == initialPoint.getY())
+					if(i == initialPoint.getY()) {
 						this.board[i][initialPoint.getX()].setFirst();
+					}
 				}
 
 				return true;
