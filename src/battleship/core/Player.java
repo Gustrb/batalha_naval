@@ -13,7 +13,6 @@ public class Player {
 	/**
 	 * BASE_POINTS holds the base value of score
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access private
 	 *
@@ -23,7 +22,6 @@ public class Player {
 	/**
 	 * name is the name of the player that is playing
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -33,7 +31,6 @@ public class Player {
 	/**
 	 * score is the player's score
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -43,7 +40,6 @@ public class Player {
 	/**
 	 * wrongAttempts counts the player's wrong attempts when shooting
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access private
 	 *
@@ -53,7 +49,6 @@ public class Player {
 	/**
 	 * myTurn holds the turn value of each player if myTurn is true then the player can play
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -63,7 +58,6 @@ public class Player {
 	/**
 	 * hitBoatsPoints counts how many points that have a boat were shot
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access private
 	 *
@@ -73,7 +67,6 @@ public class Player {
 	/**
 	 * hitBoatsPoints counts how many points that have a boat
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access private
 	 *
@@ -83,7 +76,6 @@ public class Player {
 	/**
 	 * board is the space where the game will be played
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -93,28 +85,25 @@ public class Player {
 	/**
 	 * Player is the default constructor of the class Player
 	 *
-	 * @author Diógenes Dietrich de Morais
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public 
 	 * 
 	 * @param name is the name of the player(cannot be changed later)
 	 * 
 	 * */
-	public Player(String name) {
-		this.board          = new Board();
-		this.name   	    = name;
-		this.myTurn 	    = false;
-		this.score  	    = 0;
-		this.wrongAttempts  = 0;
+	public Player(final String name) {
+		this.board = new Board();
+		this.name = name;
+		this.myTurn = false;
+		this.score = 0;
+		this.wrongAttempts = 0;
 		this.hitBoatsPoints = 0;
-		this.boatsPoints    = 0;
+		this.boatsPoints = 0;
 	}
 	
 	/**
 	 * incrementScore is the method which increments the score variable
 	 * 
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 * 
@@ -131,7 +120,6 @@ public class Player {
 	/**
 	 * incrementWrongAttempts is the method which increments the wrongAttempts variable
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -141,7 +129,6 @@ public class Player {
 	/**
 	 * resetWrongAttempts is the method which resets the wrongAttempts variable to zero
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -151,7 +138,6 @@ public class Player {
 	/**
 	 * incrementHitBoatsPoints is the method which increments the hitBoatsPoints variable
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -161,61 +147,48 @@ public class Player {
 	/**
 	 * swapTurn swaps the players myTurn variable, its meant to be used when the player makes a play
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
 	 * */
-	public void swapTurn() {
-		this.myTurn = !this.myTurn;
-	}
+	public void swapTurn() { this.myTurn = !this.myTurn; }
 	
 	/**
 	 * getScore returns the player current score
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
 	 * @return the value of the score variable
 	 * 
 	 * */
-	public int getScore() {
-		return this.score;
-	}
+	public int getScore() { return this.score; }
 	
 	/**
 	 * isMyTurn returns if its the player turn
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
 	 * @return the value of the myTurn property
 	 * 
 	 * */
-	public boolean isMyTurn() {
-		return this.myTurn;
-	}
+	public boolean isMyTurn() { return this.myTurn; }
 	
 	/**
 	 * getName returns the player name
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
 	 * return the value of the constant name
 	 * 
 	 * */
-	public String getName() {
-		return this.name;
-	}
+	public String getName() { return this.name; }
 
 	/**
 	 * getBoard returns the player board
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -227,7 +200,6 @@ public class Player {
 	/**
 	 * getBoatsPoints returns the count of boats points
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -239,7 +211,6 @@ public class Player {
 	/**
 	 * getHitBoatsPoints returns the count of boats points has hit
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -251,8 +222,6 @@ public class Player {
 	/**
 	 * addBoat add a boat to the boats array and to the player board
 	 *
-	 * @author Diógenes Dietrich de Morais
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
@@ -276,7 +245,6 @@ public class Player {
 	/**
 	 * shootPlayer shoots player
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
