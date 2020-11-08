@@ -53,9 +53,9 @@ public class Boat {
 	 * 
 	 * */
 	public Boat(final BoatType type, final BoatOrientation orientation, final Point initialPoint) {
-		this.type 	       	  = type;
-		this.orientation   	  = orientation;
-		this.initialPoint  	  = initialPoint;
+		this.type = type;
+		this.orientation = orientation;
+		this.initialPoint = initialPoint;
 	}
 	
 	/**
@@ -70,9 +70,9 @@ public class Boat {
 	 * 
 	 * */
 	public Boat(final BoatType type, final Point initialPoint) {
-		this.type 		  = type;
+		this.type = type;
 		this.initialPoint = initialPoint;
-		this.orientation  = BoatOrientation.NONE;
+		this.orientation = BoatOrientation.NONE;
 	}
 	
 	/**
