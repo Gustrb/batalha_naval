@@ -14,7 +14,6 @@ public class AlreadyHaveBoat extends Exception {
 	/**
 	 * AlreadyHaveBoat is the constructor of the class
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
