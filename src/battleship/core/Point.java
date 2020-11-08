@@ -13,7 +13,6 @@ public class Point {
 	/**
 	 * the x position of the point in the board
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -23,7 +22,6 @@ public class Point {
 	/**
 	 * the y position of the point in the board
 	 * 
-	 * @author Gustavo Reis Baeur
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -33,7 +31,6 @@ public class Point {
 	/**
 	 * isOccupied is true if the point was occupied by a boat
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access private
 	 * 
@@ -43,7 +40,6 @@ public class Point {
 	/**
 	 * isShot is true if the point was shot
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access private
 	 *
@@ -53,7 +49,6 @@ public class Point {
 	/**
 	 * isEdge is true if the point was an edge
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access private
 	 *
@@ -63,7 +58,6 @@ public class Point {
 	/**
 	 * isFirst is true if the point was the first edge
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access private
 	 *
@@ -73,7 +67,6 @@ public class Point {
 	/**
 	 * orientation is the orientation of the boat to which the point belongs
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access private
 	 *
@@ -83,8 +76,6 @@ public class Point {
 	/**
 	 * Point is the constructor of the class
 	 * 
-	 * @author Diógenes Dietrich de Morais
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 *
@@ -105,7 +96,6 @@ public class Point {
 	/**
 	 * Point is the empty constructor of the class
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -123,9 +113,9 @@ public class Point {
 	/**
 	 * setX sets the value of the x property
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
+	 *
 	 * @param x is the value of the x property
 	 *
 	 * */
@@ -134,58 +124,46 @@ public class Point {
 	/**
 	 * setY sets the value of the y property
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
+	 *
 	 * @param y is the value of the y property
 	 *
 	 * */
-	public void setY(int y) {
-		this.y = y;
-	}
+	public void setY(int y) { this.y = y; }
 
 	/**
 	 * getX returns the x position of the point
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
 	 * @return the value of the x property
 	 * */
-	public int getX() {
-		return this.x; 
-	}
+	public int getX() { return this.x; }
 	
 	/**
 	 * getY returns the y position of the point
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
 	 * @return the value of the y property
 	 * */
-	public int getY() {
-		return this.y; 
-	}
+	public int getY() { return this.y; }
 	
 	/**
 	 * occupy is used to occupy a point in the board
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
 	 * */
-	public void occupy() { 
-		this.isOccupied = true;
-	}
+	public void occupy() { this.isOccupied = true; }
 
 	/**
 	 * shot is used to shot a point in the board
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -195,7 +173,6 @@ public class Point {
 	/**
 	 * setEdge is used to set edge property on point in the board
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -205,7 +182,6 @@ public class Point {
 	/**
 	 * setFirst is used to set first property on point in the board
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -215,7 +191,6 @@ public class Point {
 	/**
 	 * setOrientation is used to set orientation property on point in the board
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -225,21 +200,17 @@ public class Point {
 	/**
 	 * isOccupied returns if the Point is occupied
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
 	 * @return the value of the isOccupied property
 	 * 
 	 * */
-	public boolean isOccupied() { 
-		return this.isOccupied;
-	}
+	public boolean isOccupied() { return this.isOccupied; }
 
 	/**
 	 * isEdge returns if the Point is an edge
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -251,7 +222,6 @@ public class Point {
 	/**
 	 * isFirst returns if the Point is the first edge
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -263,7 +233,6 @@ public class Point {
 	/**
 	 * isShot returns if the Point was shot
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -275,7 +244,6 @@ public class Point {
 	/**
 	 * getOrientation returns the value of orientation variable
 	 *
-	 * @author Diógenes Dietrich de Morais
 	 * @since 1.0
 	 * @access public
 	 *
@@ -287,7 +255,6 @@ public class Point {
 	/**
 	 * toString parses the values of the class to a more appealing form
 	 * 
-	 * @author Gustavo Reis Bauer
 	 * @since 1.0
 	 * @access public
 	 * 
