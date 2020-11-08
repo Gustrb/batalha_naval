@@ -18,7 +18,6 @@ public class Game {
     /**
      * CLEANING_LINES is a constant which holds the number of lines necessary to clear the screen
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access private
      *
@@ -28,7 +27,6 @@ public class Game {
     /**
      * SHIP_MODEL_PATH is a constant which holds the path of model art of a ship
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access private
      *
@@ -38,7 +36,6 @@ public class Game {
     /**
      * instantiatedPlayers is a variable that contains the number of instantiated players
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access private
      *
@@ -48,7 +45,6 @@ public class Game {
     /**
      * input is the Scanner instance that will be used through all the class
      *
-     * @author Gustavo Reis Bauer
      * @since 1.0
      * @access private
      *
@@ -58,7 +54,6 @@ public class Game {
     /**
      * printModel is responsible for rendering a model on the screen
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access private
      *
@@ -79,7 +74,6 @@ public class Game {
     /**
      * okInput is responsible for pausing the code flow
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access private
      *
@@ -94,7 +88,6 @@ public class Game {
     /**
      * verifyIntInput is responsible for checking the input value for integers
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access private
      *
@@ -121,7 +114,6 @@ public class Game {
     /**
      * swapBothTurns is responsible for swap both players turns
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access private
      *
@@ -137,7 +129,6 @@ public class Game {
     /**
      * clearScreen is responsible for clear the screen
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access public
      * */
@@ -150,7 +141,6 @@ public class Game {
     /**
      * mainMenu is responsible for shows the main menu
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access public
      *
@@ -188,7 +178,6 @@ public class Game {
     /**
      * getPlayerName is responsible for gets the player's name
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access public
      *
@@ -207,7 +196,6 @@ public class Game {
     /**
      * createBoat is responsible for creating a player's boats when boat is not the first
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access public
      *
@@ -222,7 +210,6 @@ public class Game {
     /**
      * createBoat is responsible for creating the boats of a player
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access public
      *
@@ -300,7 +287,6 @@ public class Game {
     /**
      * createAllBoats is responsible for call the method who creates the boats
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access public
      *
@@ -325,7 +311,6 @@ public class Game {
     /**
      * showBoardWithBoats is responsible for renders the board with boats on screen
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access public
      *
@@ -344,7 +329,6 @@ public class Game {
     /**
      * shoot is responsible for receiving the points and making the shots on the board
      *
-     * @author Diógenes Dietrich de Morais
      * @since 1.0
      * @access public
      *
@@ -354,11 +338,11 @@ public class Game {
      * @return if the player shot a boat
      * */
     public void shoot(final Player shoot, final Player beShot){
-        final Point point      = new Point();
+        final Point point = new Point();
         final Player[] players = { shoot, beShot };
 
         boolean verifyShot = false;
-        boolean isBoat     = false;
+        boolean isBoat = false;
 
         this.clearScreen();
 
