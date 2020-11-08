@@ -79,9 +79,7 @@ public class Boat {
 	 * @return the value of the type property
 	 * 
 	 * */
-	public BoatType getType() { 
-		return this.type; 
-	}
+	public BoatType getType() { return this.type; }
 	
 	/**
 	 * Returns the orientation of the boat
@@ -92,9 +90,7 @@ public class Boat {
 	 * @return the value of the orientation property
 	 * 
 	 * */
-	public BoatOrientation getOrientation() {
-		return this.orientation;
-	}
+	public BoatOrientation getOrientation() { return this.orientation; }
 	
 	/**
 	 * Returns the first point of the boat
@@ -105,7 +101,5 @@ public class Boat {
 	 * @return the value of the initialPoint property
 	 * 
 	 * */
-	public Point getInitialPoint() {
-		return this.initialPoint;
-	}
+	public Point getInitialPoint() { return this.initialPoint; }
 }
